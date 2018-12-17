@@ -9,7 +9,7 @@ pipeline {
                // sh 'git clone https://github.com/ilefnlebhar/DepotScript.git workstation1'
                 sh '''
                     chmod 755 ./*.sh
-                '''
+                 '''
             }
         }        
         stage('Build') {
@@ -17,11 +17,10 @@ pipeline {
                 sh 'echo "Etape-1 Build " '
                 sh '''
                  
-                  ./script1.sh
+                 ./script1.sh
                 '''
             }
         }
-
         
         stage('Deploy') {
             steps {
