@@ -3,6 +3,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
+                sh ' echo $pwd ' 
                 sh 'echo " Etape 0- Clonnage depo Git" '
                 sh ' rm -f resultat* RESULTAT* '
                // sh 'git clone https://github.com/ilefnlebhar/DepotScript.git workstation1'
